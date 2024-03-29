@@ -91,21 +91,21 @@
 6) Декоратор для измерения времени выполнения функции:
 Напишите декоратор который измеряет время выполнения функции и выводит результат.
 '''
-import time
+# import time
 
-def timer_decorator(func):
-    def wrapper():
-        start_time = time.time()
-        func()
-        end_time = time.time()
-        print(f'Время заняло: {end_time - start_time} секунд')
+# def timer_decorator(func):
+#     def wrapper():
+#         start_time = time.time()
+#         func()
+#         end_time = time.time()
+#         print(f'Время заняло: {end_time - start_time} секунд')
 
-    return wrapper
+#     return wrapper
 
-@timer_decorator
-def send_message_to_users():
-    users = range(1, 1000001)
-    for user in users:
-        print(f'Отправка сообщения пользователю{user}')
+# @timer_decorator
+# def send_message_to_users():
+#     users = range(1, 1000001)
+#     for user in users:
+#         print(f'Отправка сообщения пользователю{user}')
 
-send_message_to_users()
+# send_message_to_users()
